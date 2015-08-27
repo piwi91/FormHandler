@@ -1,0 +1,22 @@
+{
+    "name": "piwi91/form-handler",
+    "description": "A Form Handler implementation for the Symfony Form Component",
+    "type": "library",
+    "require": {
+        "symfony/http-foundation": "^2.3",
+        "symfony/form": "^2.3"
+    },
+    "autoload": {
+        "psr-4":{
+            "Piwi\\Form\\": ["src/"]
+        }
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Pim Widdershoven",
+            "email": "pim@widdershoven.nl"
+        }
+    ],
+    "minimum-stability": "stable"
+}
