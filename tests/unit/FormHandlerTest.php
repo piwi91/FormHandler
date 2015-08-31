@@ -78,8 +78,6 @@ final class FormHandlerTest extends PHPUnit_Framework_TestCase
 
         $this->assertSame($this->formFactory, $this->handler->getFormFactory());
         $this->assertSame($this->formType, $this->handler->getFormType());
-
-        Mockery::close();
     }
 
     /**
