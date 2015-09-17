@@ -35,8 +35,8 @@ final class FormHandlerTest extends PHPUnit_Framework_TestCase
 
     public function setUp()
     {
-        $this->formFactory = Mockery::mock(FormFactoryInterface::class);
-        $this->formType = Mockery::mock(FormTypeInterface::class);
+        $this->formFactory = Mockery::mock('Symfony\Component\Form\FormFactoryInterface');
+        $this->formType = Mockery::mock('Symfony\Component\Form\FormTypeInterface');
         $this->postProcessExpectation = Mockery::mock();
         $this->handler = new FormHandler($this->formFactory, $this->formType, $this->postProcessExpectation);
     }
@@ -57,8 +57,8 @@ final class FormHandlerTest extends PHPUnit_Framework_TestCase
 
     public function test_post_process()
     {
-        $form = Mockery::mock(FormInterface::class);
-        $request = Mockery::mock(Request::class);
+        $form = Mockery::mock('Symfony\Component\Form\FormInterface');
+        $request = Mockery::mock('Symfony\Component\HttpFoundation\Request');
 
         $form
             ->shouldReceive('handleRequest')
@@ -86,7 +86,7 @@ final class FormHandlerTest extends PHPUnit_Framework_TestCase
      */
     public function test_validation_exception_depends_on_form()
     {
-        $form = Mockery::mock(FormInterface::class);
+        $form = Mockery::mock('Symfony\Component\Form\FormInterface');
         $form
             ->shouldReceive('getName')
             ->withNoArgs()
