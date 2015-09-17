@@ -1,6 +1,8 @@
 FormHandler
 ===========
 
+[![Build Status](https://travis-ci.org/piwi91/FormHandler.svg?branch=master)](https://travis-ci.org/piwi91/FormHandler)
+
 This is a Form Handler implementation which I used in combination with the Symfony Form component.
 
 ## Usage
