@@ -5,6 +5,8 @@ FormHandler
 
 This is a Form Handler implementation which I used in combination with the Symfony Form component.
 
+[Click here to go to the blog post I wrote about the form handler.](http://www.pimwiddershoven.nl/entry/introduction-to-the-formhandler-library)
+
 ## Usage
 
 Implement the `FormHandlerInterface` OR extend the `AbstractFormHandler` and implement the `postProcess` method.
